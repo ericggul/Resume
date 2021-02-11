@@ -155,6 +155,26 @@ body{
     width: 15%;
 }
 
+.skill_circle{
+    width: 20px;
+    height: 20px;
+    background: orangered;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.skill_circle .business{
+    background: yellow;
+    color: white;
+}
+
+.skill_circle .data{
+    background: orangered;
+    color: white;
+}
+
+
 .resume_list ul{
     padding-left: 20px;
 }
