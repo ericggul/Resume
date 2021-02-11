@@ -127,52 +127,112 @@ body{
 
 .resume_skills ul li{
     justify-content: space-between;
-    margin-bottom: 15px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 
 .resume_skills ul li .skill_name{
-    width: 25%;
+    width: 70%;
 }
 
-.resume_skills ul li .skill_progress{
-    width: 60%;
-    margin: 0 5px;
-    height: 8px;
-    background:white;
-    position: relative;
-    border: 1px solid black;
-}
 
-.resume_skills ul li .skill_progress span{
-    position: absolute;
-    top:0;
-    left:0;
-    background:black;
-    height: 100%;
-}
-
-.resume_skills ul li .skill_per{
-    width: 15%;
-}
-
-.skill_circle{
-    width: 20px;
-    height: 20px;
-    background: orangered;
+.skill_business{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    background: #fccc0a;
     color: white;
     border-radius: 50%;
     text-align: center;
+    position: relative;
+}
+.skill_business p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
 }
 
-.skill_circle .business{
-    background: yellow;
+.skill_data{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    background: #ff6319;
     color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.skill_data p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
 }
 
-.skill_circle .data{
-    background: orangered;
+.skill_leadership{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    background: #a7a9ac;
     color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
 }
+.skill_leadership p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+.skill_mathematics{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    background: #ee352e;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.skill_mathematics p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+
+.skill_philosophy{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    background: #b933ad;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.skill_philosophy p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+
 
 
 .resume_list ul{
@@ -183,20 +243,28 @@ body{
     position: relative;
 }
 
+.experience_header{
+    display: flex;
+}
+
 .resume_list ul li .title{
+    width: 70%;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
 }
+.resume_list ul li .skills{
+    width: 30%;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
 .resume_list ul li .date{
-    padding-left: 5px;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .resume_list ul li .info {
-    padding-left: 5px;
     margin-bottom: 20px; 
 }
 
