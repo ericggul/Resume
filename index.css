@@ -146,6 +146,7 @@ body{
     border-radius: 50%;
     text-align: center;
     position: relative;
+    margin-right: 3px;
 }
 .skill_business p{
     position: absolute;
@@ -165,6 +166,7 @@ body{
     border-radius: 50%;
     text-align: center;
     position: relative;
+    margin-right: 3px;
 }
 .skill_data p{
     position: absolute;
@@ -184,6 +186,7 @@ body{
     border-radius: 50%;
     text-align: center;
     position: relative;
+    margin-right: 3px;
 }
 .skill_leadership p{
     position: absolute;
@@ -203,6 +206,7 @@ body{
     border-radius: 50%;
     text-align: center;
     position: relative;
+    margin-right: 3px;
 }
 .skill_mathematics p{
     position: absolute;
@@ -223,6 +227,7 @@ body{
     border-radius: 50%;
     text-align: center;
     position: relative;
+    margin-right: 3px;
 }
 .skill_philosophy p{
     position: absolute;
@@ -247,16 +252,16 @@ body{
     display: flex;
 }
 
-.resume_list ul li .title{
-    width: 70%;
+.experience_header .title{
+    width: 80%;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
-.resume_list ul li .skills{
-    width: 30%;
+.experience_header .skills{
+    display: flex;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
 .resume_list ul li .date{
     font-size: 16px;
