@@ -125,6 +125,11 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.resume_skills{
+    position: sticky;
+    top: 0;
+}
+
 .resume_skills ul li{
     justify-content: space-between;
     height: 30px;
@@ -135,6 +140,11 @@ body{
     width: 70%;
 }
 
+.skill_button:hover,
+.skill_button.active{
+    filter: brightness(120%);
+    cursor: pointer;
+}
 
 .skill_business{
     width: 30px;
