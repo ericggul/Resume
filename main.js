@@ -10,13 +10,11 @@ window.addEventListener("scroll", () => {
 })
 
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function(){
-    var currentScrollpos = window.pageYOffset;
-    if (prevScrollpos>currentScrollpos){
-        document.getElementsByClassName(".resume_skills").style.top = "0";
-    } else {
-        document.getElementsByClassName(".resume_skills").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollpos;
-}
+$(document).ready(function(){
+    $('.skill_button').click(function(){
+        const value = $(this).attr('data-filter');
+        if (value == 'business'){
+            $('.itemBox').show('1000');
+        }
+    })
+})
