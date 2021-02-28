@@ -118,6 +118,17 @@ body{
     position: relative;
 }
 
+.resume_left ul li .icon:hover{
+    background: rgb(223, 168, 168);
+    color: black;
+    transition: 2s;
+}
+
+.resume_left ul li .data:hover{
+    font-weight:1000;
+    transition: 1s;
+}
+
 .resume .icon i{
     position: absolute;
     top: 50%;
@@ -254,9 +265,17 @@ body{
     padding-left: 20px;
 }
 
-.resume_list ul li{
+.resume_work ul{
     position: relative;
+    margin-bottom: 40px;
+    border-bottom: 0.5px solid black;
 }
+
+.resume_work ul:last-child{
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
 
 .experience_header{
     display: flex;
