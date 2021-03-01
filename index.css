@@ -44,6 +44,15 @@ body{
     margin: 50px auto;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
 .resume_left{
     width: 300px;
     background:white;
@@ -52,6 +61,7 @@ body{
 .resume_right{
     width: 700px;
     padding: 25px;
+    padding-top: 0px;
 }
 
 .resume_profile{
@@ -335,14 +345,36 @@ body{
     padding-left: 20px;
 }
 
+.resume_right .resume_item:first-child{
+    padding-top: 10px;
+}
+
+.resume_item .title{
+    margin-bottom: 30px;
+}
+
+.resume_list ul li{
+    padding-bottom: 20px;
+}
+
+.resume_list ul:last-child li{
+    padding-bottom: 0px;
+}
+
+.resume_list ul li .info{
+    font-weight: 400;
+}
+
 .resume_work ul li{
     position: relative;
-    margin-bottom: 40px;
-    border-bottom: 0.5px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 0.2px solid black;
 }
 
 .resume_work ul:last-child li{
     margin-bottom: 0px;
+    padding-bottom: 0px;
     border-bottom: none;
 }
 
@@ -352,10 +384,10 @@ body{
 }
 
 .experience_header .title{
-    width: 80%;
+    width: 76%;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 .experience_header .skills{
     display: flex;
