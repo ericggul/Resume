@@ -33,7 +33,7 @@ for (let k = 0; k<businesses.length; k++){
                 if (TF){
                     listItems[i].classList.add("visible");
                 } else{
-                    listItems[i].classList.add("invisible");
+                    listItems[i].classList.add("invisible_business");
                 }
             }
         } else{
@@ -46,7 +46,7 @@ for (let k = 0; k<businesses.length; k++){
                 if (TF){
                     listItems[i].classList.remove("visible");
                 } else{
-                    listItems[i].classList.remove("invisible");
+                    listItems[i].classList.remove("invisible_business");
                 }
             }
         }
@@ -68,7 +68,7 @@ for (let k = 0; k<datas.length; k++){
                 if (TF){
                     listItems[i].classList.add("visible");
                 } else{
-                    listItems[i].classList.add("invisible");
+                    listItems[i].classList.add("invisible_data");
                 }
             }
         } else{
@@ -81,7 +81,7 @@ for (let k = 0; k<datas.length; k++){
                 if (TF){
                     listItems[i].classList.remove("visible");
                 } else{
-                    listItems[i].classList.remove("invisible");
+                    listItems[i].classList.remove("invisible_data");
                 }
             }
         }
@@ -103,7 +103,7 @@ for (let k = 0; k<leaderships.length; k++){
                 if (TF){
                     listItems[i].classList.add("visible");
                 } else{
-                    listItems[i].classList.add("invisible");
+                    listItems[i].classList.add("invisible_leadership");
                 }
             }
         } else{
@@ -116,7 +116,7 @@ for (let k = 0; k<leaderships.length; k++){
                 if (TF){
                     listItems[i].classList.remove("visible");
                 } else{
-                    listItems[i].classList.remove("invisible");
+                    listItems[i].classList.remove("invisible_leadership");
                 }
             }
         }
@@ -138,7 +138,7 @@ for (let k = 0; k<mathematicses.length; k++){
                 if (TF){
                     listItems[i].classList.add("visible");
                 } else{
-                    listItems[i].classList.add("invisible");
+                    listItems[i].classList.add("invisible_mathematics");
                 }
             }
         } else{
@@ -151,7 +151,7 @@ for (let k = 0; k<mathematicses.length; k++){
                 if (TF){
                     listItems[i].classList.remove("visible");
                 } else{
-                    listItems[i].classList.remove("invisible");
+                    listItems[i].classList.remove("invisible_mathematics");
                 }
             }
         }
@@ -173,7 +173,7 @@ for (let k = 0; k<philosophies.length; k++){
                 if (TF){
                     listItems[i].classList.add("visible");
                 } else{
-                    listItems[i].classList.add("invisible");
+                    listItems[i].classList.add("invisible_philosophy");
                 }
             }
         } else{
@@ -186,7 +186,7 @@ for (let k = 0; k<philosophies.length; k++){
                 if (TF){
                     listItems[i].classList.remove("visible");
                 } else{
-                    listItems[i].classList.remove("invisible");
+                    listItems[i].classList.remove("invisible_philosophy");
                 }
             }
         }

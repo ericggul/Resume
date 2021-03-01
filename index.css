@@ -103,9 +103,10 @@ a:hover{
     border-bottom: 2px solid #464646;
 }
 
-.resume_left .resume_item:last-child{
-    border-bottom: hidden;
+.resume_item:last-child{
+    border-bottom: none;
 }
+
 
 .resume_left ul li{
     display: flex;
@@ -161,12 +162,17 @@ a:hover{
     margin-bottom: 10px;
 }
 
+.resume_expertise ul li{
+    font-size: 15px;
+}
+
 .resume_skillsets ul li{
     display: flex;
     align-items: center;
     height: 20px;
     margin-bottom: 5px;
 }
+
 
 
 
@@ -198,6 +204,7 @@ a:hover{
     filter: brightness(120%);
     cursor: pointer;
 }
+
 .skill_business.active{
     filter: brightness(150%);
     cursor: pointer;
@@ -361,14 +368,11 @@ a:hover{
     padding-bottom: 0px;
 }
 
-.resume_list ul li .info{
-    font-weight: 400;
-}
 
 .resume_work ul li{
     position: relative;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
     border-bottom: 0.2px solid black;
 }
 
@@ -385,7 +389,7 @@ a:hover{
 
 .experience_header .title{
     width: 76%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -401,14 +405,30 @@ a:hover{
 .resume_list ul li.invisible{
     display: none;
 }
+.resume_list ul li.invisible_business{
+    display: none;
+}
+.resume_list ul li.invisible_data{
+    display: none;
+}
+.resume_list ul li.invisible_leadership{
+    display: none;
+}
+.resume_list ul li.invisible_mathematics{
+    display: none;
+}
+.resume_list ul li.invisible_philosophy{
+    display: none;
+}
 
 .resume_list ul li .date{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .resume_list ul li .info {
     margin-bottom: 20px; 
+    font-weight: 400;
+    font-size: 13px;
 }
-
