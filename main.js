@@ -17,25 +17,189 @@ window.addEventListener("scroll", () =>{
     }
 })
 
-const business = document.querySelector(".skill_business");
 const businesses = document.querySelectorAll(".skill_business");
+const datas = document.querySelectorAll(".skill_data");
+const leaderships = document.querySelectorAll(".skill_leadership");
+const mathematicses = document.querySelectorAll(".skill_mathematics");
+const philosophies = document.querySelectorAll(".skill_philosophy");
 const listItems = document.querySelectorAll(".experiences li");
-const listLen = listItems.length;
 
-business.addEventListener("click", () =>{
-    var i;
-    for (i = 0; i<listLen; i++){
-        var TF = listItems[i].innerHTML.includes('skill_business');
-        if (TF){
-            listItems[i].classList.add("visible");
+for (let k = 0; k<businesses.length; k++){
+    var business = businesses[k];
+    var businessClick = 0;
+    business.addEventListener("click", () =>{
+        businessClick += 1;
+        if(businessClick%2 ==1){
             for (let j = 0; j<businesses.length; j++){
                 businesses[j].classList.add("active");
             }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_business');
+                if (TF){
+                    listItems[i].classList.add("visible");
+                } else{
+                    listItems[i].classList.add("invisible");
+                }
+            }
         } else{
-            listItems[i].classList.add("invisible");
+            for (let j = 0; j<businesses.length; j++){
+                businesses[j].classList.remove("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_business');
+                if (TF){
+                    listItems[i].classList.remove("visible");
+                } else{
+                    listItems[i].classList.remove("invisible");
+                }
+            }
         }
-    }
-})
+    })
+}
+
+for (let k = 0; k<datas.length; k++){
+    var data = datas[k];
+    var dataClick = 0;
+    data.addEventListener("click", () =>{
+        dataClick += 1;
+        if(dataClick%2 ==1){
+            for (let j = 0; j<datas.length; j++){
+                datas[j].classList.add("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_data');
+                if (TF){
+                    listItems[i].classList.add("visible");
+                } else{
+                    listItems[i].classList.add("invisible");
+                }
+            }
+        } else{
+            for (let j = 0; j<datas.length; j++){
+                datas[j].classList.remove("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_data');
+                if (TF){
+                    listItems[i].classList.remove("visible");
+                } else{
+                    listItems[i].classList.remove("invisible");
+                }
+            }
+        }
+    })
+}
+
+for (let k = 0; k<leaderships.length; k++){
+    var leadership = leaderships[k];
+    var leadershipClick = 0;
+    leadership.addEventListener("click", () =>{
+        leadershipClick += 1;
+        if(leadershipClick%2 ==1){
+            for (let j = 0; j<leaderships.length; j++){
+                leaderships[j].classList.add("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_leadership');
+                if (TF){
+                    listItems[i].classList.add("visible");
+                } else{
+                    listItems[i].classList.add("invisible");
+                }
+            }
+        } else{
+            for (let j = 0; j<leaderships.length; j++){
+                leaderships[j].classList.remove("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_leadership');
+                if (TF){
+                    listItems[i].classList.remove("visible");
+                } else{
+                    listItems[i].classList.remove("invisible");
+                }
+            }
+        }
+    })
+}
+
+for (let k = 0; k<mathematicses.length; k++){
+    var mathematics = mathematicses[k];
+    var mathematicsClick = 0;
+    mathematics.addEventListener("click", () =>{
+        mathematicsClick += 1;
+        if(mathematicsClick%2 ==1){
+            for (let j = 0; j<mathematicses.length; j++){
+                mathematicses[j].classList.add("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_mathematics');
+                if (TF){
+                    listItems[i].classList.add("visible");
+                } else{
+                    listItems[i].classList.add("invisible");
+                }
+            }
+        } else{
+            for (let j = 0; j<mathematicses.length; j++){
+                mathematicses[j].classList.remove("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_mathematics');
+                if (TF){
+                    listItems[i].classList.remove("visible");
+                } else{
+                    listItems[i].classList.remove("invisible");
+                }
+            }
+        }
+    })
+}
+
+for (let k = 0; k<philosophies.length; k++){
+    var philosophy = philosophies[k];
+    var philosophyClick = 0;
+    philosophy.addEventListener("click", () =>{
+        philosophyClick += 1;
+        if(philosophyClick%2 ==1){
+            for (let j = 0; j<philosophies.length; j++){
+                philosophies[j].classList.add("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_philosophy');
+                if (TF){
+                    listItems[i].classList.add("visible");
+                } else{
+                    listItems[i].classList.add("invisible");
+                }
+            }
+        } else{
+            for (let j = 0; j<philosophies.length; j++){
+                philosophies[j].classList.remove("active");
+            }
+            var i;
+            for (i = 0; i<listItems.length; i++){
+                var TF = listItems[i].innerHTML.includes('skill_philosophy');
+                if (TF){
+                    listItems[i].classList.remove("visible");
+                } else{
+                    listItems[i].classList.remove("invisible");
+                }
+            }
+        }
+    })
+}
+
+
 
 
 

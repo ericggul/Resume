@@ -164,16 +164,6 @@ body{
     width: 70%;
 }
 
-.skill_business:hover{
-    filter: brightness(120%);
-    cursor: pointer;
-}
-.skill_business.active{
-    filter: brightness(120%);
-    cursor: pointer;
-    box-shadow: 2px 2px grey;
-}
-
 .skill_business{
     width: 30px;
     height: 30px;
@@ -193,6 +183,19 @@ body{
     transform: translate(-50%, -50%);
     font-size: 17px;
 }
+
+.skill_business:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+.skill_business.active{
+    filter: brightness(150%);
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+    box-shadow: 2px 2px grey;
+}
+
 
 .skill_data{
     width: 30px;
@@ -214,6 +217,19 @@ body{
     font-size: 17px;
 }
 
+.skill_data:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+.skill_data.active{
+    filter: brightness(150%);
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+    box-shadow: 2px 2px grey;
+}
+
+
 .skill_leadership{
     width: 30px;
     height: 30px;
@@ -234,6 +250,19 @@ body{
     font-size: 17px;
 }
 
+.skill_leadership:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+.skill_leadership.active{
+    filter: brightness(150%);
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+    box-shadow: 2px 2px grey;
+}
+
+
 .skill_mathematics{
     width: 30px;
     height: 30px;
@@ -253,6 +282,19 @@ body{
     transform: translate(-50%, -50%);
     font-size: 17px;
 }
+
+.skill_mathematics:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+.skill_mathematics.active{
+    filter: brightness(150%);
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+    box-shadow: 2px 2px grey;
+}
+
 
 
 .skill_philosophy{
@@ -275,6 +317,17 @@ body{
     font-size: 17px;
 }
 
+.skill_philosophy:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+.skill_philosophy.active{
+    filter: brightness(150%);
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+    box-shadow: 2px 2px grey;
+}
 
 
 
@@ -282,13 +335,13 @@ body{
     padding-left: 20px;
 }
 
-.resume_work ul{
+.resume_work ul li{
     position: relative;
     margin-bottom: 40px;
     border-bottom: 0.5px solid black;
 }
 
-.resume_work ul:last-child{
+.resume_work ul:last-child li{
     margin-bottom: 0px;
     border-bottom: none;
 }
@@ -311,7 +364,6 @@ body{
 }
 
 .resume_list ul li.visible{
-    
 }
 
 .resume_list ul li.invisible{
