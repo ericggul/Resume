@@ -1,0 +1,203 @@
+:root{
+	--speedlimit-width: 60px;
+	--speedlimit-height: 60px;
+	--speedlimit-border: 7px;
+	--speedlimit-font-size: 30px;
+	--speedlimit-font-weight: 800;
+	--speedlimit-letter-spacing: -1px;
+}
+.speedlimit{
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    left: 32px;
+    width: var(--speedlimit-width);
+    height: var(--speedlimit-height);
+    border-radius: 50%;
+    border-width: var(--speedlimit-border);
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--speedlimit-font-size);
+    font-weight: var(--speedlimit-font-weight);
+    color: #1f1f1f;
+    text-decoration: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .5s cubic-bezier(1, 0.08, 0.74, 1.27);
+    letter-spacing: var(--speedlimit-letter-spacing);
+    z-index: 3;
+}
+
+.speedlimit.active{
+    bottom: 32px;
+    pointer-events: auto;
+    cursor: help;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.speedlimit.flash{
+	animation-name: flash;
+	animation-iteration-count: 20;
+	animation-duration: 0.1s;
+}
+
+.speedlimit.centerflash{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border-width: 20px;
+	font-size: 90px;
+	font-weight: 2000;
+	letter-spacing: -3px;
+    animation-name: flash;
+    z-index: 100;
+    animation-iteration-count: 10;
+    animation-duration: 0.1s;
+}
+
+@keyframes flash{
+    0% {border-color: red;}
+    20% {border-color: #006400;}
+    40% {border-color: #FFFAF0;}
+    50% {border-color: #7FFF00;}
+    60% {border-color: #ADFF2F;}
+    75% {border-color: #B22222;}
+    90% {border-color: #4B0082;}
+}
+
+
+#speedmodal{
+	position: fixed;
+	grid-template-rows: repeat(6, 10vh);
+	grid-template-columns: repeat(7, 10vw);
+	background-color: #40acad;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3vw;
+	border: 3px solid black;
+	width: 70vw;
+	height: 60vh;
+	text-align: center;
+	animation-name: flash;
+	animation-iteration-count: 10;
+	animation-duration: 0.1s;
+	vertical-align: center;
+	justify-content: center;
+	align-content: center;
+	display: none;
+}
+
+#speedmodal.active{
+	display: grid;
+	transition: 1s;
+}
+
+.modalheader{
+	font-size: 2em;
+	margin-top: 2vh;
+	grid-column: 1/8;
+	grid-row: 1/2;
+}
+
+.modalbody{
+	grid-column: 1/5;
+	grid-row: 2/4;
+}
+
+.modalbody p{
+	margin: 0;
+}
+
+.modaltable1{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	grid-column: 1/5;
+	grid-row: 4/5;
+}
+
+.modaltable1 td{
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
+
+.modaltable1 tr{
+	background-color: white;
+}
+
+
+.modaltable2{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	grid-column: 5/8;
+	grid-row: 4/6;
+}
+
+.modaltable2 td{
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+.modaltable2 tr{
+	background-color: white;
+}
+
+.modalwarning{
+	grid-column: 1/5;
+	grid-row: 6/7;
+	color: #8f1315;
+	font-size: 1.1em;
+}
+
+.modalwarning b{
+	font-size: 1.3em;
+}
+
+.modalexpl{
+	grid-column: 5/8;
+	grid-row: 2/4;
+}
+
+.modalbutton{
+	grid-column: 5/8;
+	grid-row: 6/7;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	height: 6vh;
+	width: 8vw;
+	border-radius: 1vw;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.modalbutton p{
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 0.5vh;
+}
+
+@keyframes flash{
+    0% {border-color: red;}
+    20% {border-color: #006400;}
+    40% {border-color: #FFFAF0;}
+    50% {border-color: #7FFF00;}
+    60% {border-color: #ADFF2F;}
+    75% {border-color: #B22222;}
+    90% {border-color: #4B0082;}
+}
+
+.modalbutton:hover{
+	background-color: rgb(153, 131, 58);
+}
